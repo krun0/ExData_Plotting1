@@ -21,7 +21,7 @@ colnames(df)=colnames(header)
 df$datetime <- strptime(paste(df$Date,df$Time,sep = " "),format="%d/%m/%Y %H:%M:%S")
 
 # Construct plot as a .png file
-png(file="plot3.png",width=480,height=480)
+png(file="plot3.png",width=480,height=480,bg="transparent")
 
 # initialise plot area and draw sub_metering_1 energy over 2 days period
 with(df,plot(datetime,Sub_metering_1,type="l",xlab="",ylab="Energy sub metering"))

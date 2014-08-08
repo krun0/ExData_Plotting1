@@ -22,7 +22,7 @@ colnames(df)=colnames(header)
 df$datetime <- strptime(paste(df$Date,df$Time,sep = " "),format="%d/%m/%Y %H:%M:%S")
 
 # Construct plot as a .png file
-png(file="plot4.png",width=480,height=480)
+png(file="plot4.png",width=480,height=480,bg="transparent")
 
 par(mfrow=c(2,2)) # plot 4 charts in the same canvas (2 rows by 2 columns)
 # line chart of gobal active powers over 2 day period

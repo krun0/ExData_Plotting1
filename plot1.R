@@ -18,6 +18,6 @@ df <- read.table("household_power_consumption.txt",sep=";",skip=66637,nrows=2879
 colnames(df)=colnames(header)
 
 # Construct plot as a .png file
-png(file="plot1.png",width=480,height=480)
+png(file="plot1.png",width=480,height=480,bg="transparent")
 with(df,hist(Global_active_power, col="red",main="Global Active Power",xlab="Global Active Power (kilowatts)"))
 dev.off() # disconnect device
